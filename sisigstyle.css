@@ -1,0 +1,441 @@
+@media(orientation: portrait){
+body{
+  height:100vh;
+  align-items: center;
+  text-align: justify;
+  background-image: url("https://i.imgur.com/OrOJ4Pr.gif");
+  background-position: center;
+  background-size: cover;
+}
+h1,h2,h3,h4,h5,h6{
+  line-height: 1;
+  font-size: 30px;
+  text-align: ;
+  color:#FFFFFF;
+  font-weight: bold;
+  overflow-wrap: break-word;
+}
+p{
+  font-size: 20px;
+  text-indent: 10px;
+}
+ol{
+  margin-bottom: 15px;
+}
+li{
+  margin-bottom: 15px;
+}
+
+.foodimg{
+  border-radius: 5%;
+  float:left;
+  width:25%;
+  max-width:25%;
+  margin: 30px 40px 20px 20px;
+  padding:10px, 20px, 20px;
+  
+}
+.img2{
+  width:50%;
+  max-width: 80%;
+  border-radius: 10%;
+  position:absolute;
+  top:5px;
+  left:25%;
+  
+}
+
+.rubyName{
+  text-align: center;
+  color:red;
+  text-decoration: underline;
+  text-shadow: pink;
+  font-size: 16px;
+  animation: blink-animation 1s infinite step-start;
+  position:absolute;
+  left:30%;
+  top:60%;
+}
+.container{
+  width:auto;
+  border:5px solid red;
+  border-radius:20px;
+  padding:10px 30px 20px 30px;
+  background-image: url("https://i.imgur.com/FfHkAYe.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-width: auto;
+}
+.container2{
+  position:relative;
+  width:60%;
+  border:5px solid orange;
+  border-radius:20px;
+  margin:40px;
+  padding:20px 40px 20px 40px;
+  background-image: url("https://i.imgur.com/FfHkAYe.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-width: auto;
+}
+.containerRuby{
+  position:absolute;
+  top:27%;
+  left:75%;
+  width:15%;
+  height:30%;
+  border:5px solid orange;
+  border-radius:20px;
+  margin:40px 0px 0px 10px;
+  padding:20px;
+  background-image: url("https://i.imgur.com/FfHkAYe.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-width: auto;
+ 
+  
+}
+.gifContainer{
+  z-index:9999;
+  position:fixed;
+  left:1%;
+  bottom:1%;
+  width:auto;
+  border:5px solid orange;
+  border-radius:20px;
+  margin:40px 0px 0px 10px;
+  padding:20px;
+  background-image: url("https://i.imgur.com/QMO1hFY.gif");
+  background-size: cover;
+  background-position: center;
+  border-width: auto;
+}
+.container3{
+  position:absolute;
+  top:30%;
+  left:75%;
+  width:150px;
+  height:110px;
+  border:5px solid orange;
+  border-radius:20px;
+  margin:40px 0px 0px 10px;
+  padding:20px;
+  background-image: url("https://i.imgur.com/FfHkAYe.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-width: auto;
+  
+}
+.containerGoBack{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  width:100px;
+  height:80px;
+  border:5px solid orange;
+  border-radius:20px;
+  background-image: url("https://i.imgur.com/FfHkAYe.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.container4{
+  position:relative;
+  display:flex;
+  gap:7px;
+  border: 5px solid red;
+  padding:15px;
+  border-radius:20px;
+  background-image: url("https://i.imgur.com/FfHkAYe.jpeg");
+  background-position: center;
+  background-size: cover;
+  margin:30px;
+  
+  
+}
+
+
+.wrapper{
+  display: flex;
+}
+
+.p1{
+  color: #FFFFFF;
+  text-indent: 60px;
+}
+.p2{
+  font-size: 2vw;
+  animation: blink-animation 2s infinite step-start;
+  overflow-wrap: break-word;
+  color:white;
+  padding: 1px;
+}
+   .p3{
+    font-size: 10px;
+  animation: blink-animation 2s infinite step-start;
+  overflow-wrap: break-word;
+  color:white;
+  position:absolute;
+    top:35%;
+    left:10%;
+  }
+.smallTitle{
+  font-weight: bold;
+  font-size: 18px;
+  word-spacing: normal;
+}
+.bigTitle{
+  font-weight: bold;
+  font-size: 25px;
+}
+@keyframes blink-animation{
+  50%{
+    opacity:0;
+  }
+}
+
+.clear{
+  clear: both;
+}
+}
+.animated-border {
+    border: 4px solid transparent; /* Initial border */
+    padding: 20px;
+    position: relative;
+    color: #fff; /* Text color */
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    background-color: #1A1A1A; /* Dark background to make border pop */
+}
+
+.animated-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #ff4500, #ff6347, #ff8c00, #ff4500);
+    background-size: 200% 200%;
+    border-radius: 10px; /* Rounded corners */
+    z-index: -1;
+    animation: glowing-border 3s ease infinite;
+}
+
+/* Keyframes for glowing border animation */
+@keyframes glowing-border {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media(orientation: landscape){
+body{
+  height:100vh;
+  align-items: center;
+  text-align: justify;
+  background-color:black ;
+  background-image: url("https://i.imgur.com/OrOJ4Pr.gif");
+  background-position: center;
+  background-size: cover;
+}
+h1,h2,h3,h4,h5,h6{
+  line-height: 1;
+  font-size: 30px;
+  text-align: ;
+  color:#FFFFFF;
+  font-weight: bold;
+  overflow-wrap: break-word;
+}
+p{
+  font-size: 20px;
+  text-indent: 10px;
+}
+ol{
+  margin-bottom: 15px;
+}
+li{
+  margin-bottom: 15px;
+}
+
+.foodimg{
+  border-radius: 5%;
+  float:left;
+  width:18%;
+  max-width:25%;
+  margin: 30px 40px 20px 20px;
+  padding:10px, 20px, 20px;
+  
+}
+.img2{
+  width:50%;
+  max-width: 80%;
+  border-radius: 10%;
+  position:absolute;
+  top:5px;
+  left:25%;
+  
+}
+
+.rubyName{
+  text-align: center;
+  color:red;
+  text-decoration: underline;
+  text-shadow: pink;
+  font-size: 36px;
+  animation: blink-animation 1s infinite step-start;
+  position:absolute;
+  left:20%;
+  top:40%;
+}
+.container{
+  width:auto;
+  border:5px solid red;
+  border-radius:20px;
+  padding:10px 30px 20px 30px;
+  background-image: url("https://i.imgur.com/FfHkAYe.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-width: auto;
+}
+.container2{
+  position:relative;
+  width:60%;
+  border:5px solid orange;
+  border-radius:20px;
+  margin:40px;
+  padding:20px 40px 20px 40px;
+  background-image: url("https://i.imgur.com/FfHkAYe.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-width: auto;
+}
+.containerRuby{
+  position:absolute;
+  top:27%;
+  left:75%;
+  width:15%;
+  height:37%;
+  border:5px solid orange;
+  border-radius:20px;
+  margin:40px 0px 0px 10px;
+  padding:20px;
+  background-image: url("https://i.imgur.com/FfHkAYe.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-width: auto;
+  
+}
+.gifContainer{
+  z-index:9999;
+  position:fixed;
+  left:1%;
+  bottom:1%;
+  width:auto;
+  border:5px solid orange;
+  border-radius:20px;
+  margin:40px 0px 0px 10px;
+  padding:20px;
+  background-image: url("https://i.imgur.com/QMO1hFY.gif");
+  background-size: cover;
+  background-position: center;
+  border-width: auto;
+}
+.container3{
+  position:absolute;
+  top:30%;
+  left:72%;
+  width:140px;
+  height:140px;
+  border:5px solid orange;
+  border-radius:20px;
+  padding-bottom:10px;
+  background-image: url("https://i.imgur.com/FfHkAYe.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-width: auto;
+  
+}
+.containerGoBack{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  width:140px;
+  height:50px;
+  border:5px solid orange;
+  border-radius:20px;
+  background-image: url("https://i.imgur.com/FfHkAYe.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.container4{
+  position:relative;
+  display:flex;
+  gap:7px;
+  border: 5px solid red;
+  padding:15px;
+  border-radius:20px;
+  background-image: url("https://i.imgur.com/FfHkAYe.jpeg");
+  background-position: center;
+  background-size: cover;
+  margin:30px;
+  
+  
+}
+
+
+.wrapper{
+  display: flex;
+}
+
+.p1{
+  color: #FFFFFF;
+  text-indent: 60px;
+}
+.p2{
+  font-size: 14px;
+  animation: blink-animation 2s infinite step-start;
+  overflow-wrap: break-word;
+  color:white;
+  padding-top:20%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+  .p3{
+    font-size: 11px;
+  animation: blink-animation 2s infinite step-start;
+  overflow-wrap: break-word;
+  color:white;
+  position:absolute;
+    top:35%;
+    left:15%;
+  }
+.smallTitle{
+  font-weight: bold;
+  font-size: 18px;
+  word-spacing: normal;
+}
+.bigTitle{
+  font-weight: bold;
+  font-size: 25px;
+}
+@keyframes blink-animation{
+  50%{
+    opacity:0;
+  }
+}
+
+.clear{
+  clear: both;
+}
+}
+
+
